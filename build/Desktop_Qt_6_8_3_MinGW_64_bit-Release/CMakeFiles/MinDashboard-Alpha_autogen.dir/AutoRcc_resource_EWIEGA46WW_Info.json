@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release/MinDashboard-Alpha_autogen",
+	"CMAKE_BINARY_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha",
+	"CMAKE_SOURCE_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release/MinDashboard-Alpha_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/config/config.json",
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/ui/qml/NavBar.qml",
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/ui/qml/ToggleSwitch.qml",
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/ui/qml/LogPage.qml",
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/ui/qml/AppDialog.qml",
+		"D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/src/ui/qml/SettingsPage.qml"
+	],
+	"LOCK_FILE" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release/CMakeFiles/MinDashboard-Alpha_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/Qt5/6.8.3/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release/CMakeFiles/MinDashboard-Alpha_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/resource.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

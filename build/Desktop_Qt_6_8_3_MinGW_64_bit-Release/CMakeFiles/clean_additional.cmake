@@ -1,0 +1,10 @@
+# Additional clean files
+cmake_minimum_required(VERSION 3.16)
+
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Release")
+  file(REMOVE_RECURSE
+  "CMakeFiles\\MinDashboard-Alpha_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\MinDashboard-Alpha_autogen.dir\\ParseCache.txt"
+  "MinDashboard-Alpha_autogen"
+  )
+endif()

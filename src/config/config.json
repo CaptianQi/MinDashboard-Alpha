@@ -1,0 +1,16 @@
+{
+	"logging":{
+		"level":"DEBUG",
+		"directory":"logs",
+		"filePrefix":"app",
+		"rotateDaily":	true,
+		"maxDays":7,
+		"maxFileSizeMB":5,
+		"logToConsole":true
+	},
+	
+	"app":{
+	
+	}
+	
+}

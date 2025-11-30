@@ -1,0 +1,9 @@
+-rootPath
+D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha
+-cmake-output
+-output-file
+D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release/.qt/qml_imports/MinDashboard-Alpha_conf.cmake
+-importPath
+D:/QTProject/browse/qmltest/MinDash2/MinDashboard-Alpha/build/Desktop_Qt_6_8_3_MinGW_64_bit-Release
+-importPath
+D:/Qt/Qt5/6.8.3/mingw_64/qml
