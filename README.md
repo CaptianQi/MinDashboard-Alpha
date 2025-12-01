@@ -16,7 +16,7 @@
   - 串口通讯（可配置串口号、波特率、停止位、校验位等）
 
 - 📊 **实时可视化**
-  - 自绘仪表盘（ArcGaugeWidget，基于 QPainter）
+  - 自绘仪表盘（ArcGaugeWidget）
   - 实时面积图（RealtimeAreaChartWidget）
 
 - 📜 **日志系统**
@@ -60,31 +60,31 @@
     │   ├── man/
     │   │   ├── datamanager.h/.cpp   # 后端中枢，控制 Provider / Model / Recorder
     │   │   └── gateway.h/.cpp       # 统一 API 入口（send / dispatch）
-    │   ├── provider/
+    │   ├── dao/
     │   │   ├── dataprovider.h/.cpp  # 抽象基类：start/stop/setParams
     │   │   ├── networkprovider.h/.cpp # TCP / UDP 实现
     │   │   └── serialprovider.h/.cpp  # 串口实现
-    │   ├── parser/
+    │   ├── helper/
     │   │   └── framparser.h/.cpp      # 帧解析逻辑
-    │   ├── model/
-    |   |   ├── datarecorder.h/.cpp    # 数据记录模块
-    |   |   ├── datasignals.h/.cpp     # 消息广播中心 
+    │   └── model/
+    |       ├── datarecorder.h/.cpp    # 数据记录模块
+    |       ├── datasignals.h/.cpp     # 消息广播中心 
     │       └── datamodel.h/.cpp       # 后端数据 → 消息中心 → 前端UI
     │
     ├── ui/
     │   ├── uicom/
     │   │   ├── gaugewidget.h/.cpp         # 自绘仪表盘
     │   │   └── realtimeareachartwidget.h/.cpp # 实时面积图
-    │   ├── pages/
+    │   ├── uimain/
     │   │   ├── dashboardpage.h/.cpp       # 仪表盘页面（QWidget 容器）
     │   │   ├── logpage.h/.cpp             # 日志页面（嵌入 QML）
     │   │   └── settingpage.h/.cpp         # 设置页面（嵌入 QML）
     │   └── qml/
     │       ├── SettingsPage.qml           # 通讯 & 记录参数配置界面
-    │       ├── LogPage.qml                # 日志界面（TableView 美化）
-    │       └── AppDialog.qml              # 通用弹窗（待集成）
+    │       ├── LogPage.qml                # 日志界面
+    │       └── AppDialog.qml              # 通用弹窗
     │
-    └── core/log/ …                        # 日志相关
+    └── core/log/ … logger/logWork         # 日志相关
 ```
 ## 🧩 架构设计
 > 整个数据流大致如下：
