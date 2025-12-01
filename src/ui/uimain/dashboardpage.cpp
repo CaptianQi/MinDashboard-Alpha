@@ -244,6 +244,9 @@ void DashboardPage::connectProvider(bool running)
         GateWay::instance()->send(API::PROVIDER::STARTP);
     }else{
         GateWay::instance()->send(API::PROVIDER::CLOSEP);
+        if(m_recorderState){
+            GateWay::instance()->send(API::RECORDER::STOPR);
+        }
     }
 }
 
@@ -275,6 +278,10 @@ void DashboardPage::onIsRecording(bool recording)
         m_indicatorRecord->setStatus(StatusIndicatorWidget::Off);
         m_recorderRoot->setProperty("checked",recording);
     }
+    if(m_recorderState){
+        m_recorderState = recording;
+        return;
+    }
 
     if (!recording && m_desiredRecorder) {
         emit requestDialog("提示",
@@ -284,4 +291,5 @@ void DashboardPage::onIsRecording(bool recording)
                            false, true);
         m_desiredRecorder = false;
     }
+    m_recorderState = recording;
 }

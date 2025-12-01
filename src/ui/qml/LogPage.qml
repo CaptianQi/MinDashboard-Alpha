@@ -46,7 +46,7 @@ Item {
                     color: "#263238"
                 }
                 Label {
-                    text: qsTr("查看运行时日志，支持清空与导出，按级别颜色区分")
+                    text: qsTr("查看运行时日志，清空与导出")
                     font.pixelSize: 12
                     color: "#78909C"
                 }
@@ -186,7 +186,7 @@ Item {
                     // 这里就让表格自己占满
 
                     clip: true
-                    model: logModel   // 来自 C++ 的 QStandardItemModel
+                    model: logModel   // C++
 
                     // 正常滚动：允许拖动和滚轮，但不要橡皮筋
                     interactive: true

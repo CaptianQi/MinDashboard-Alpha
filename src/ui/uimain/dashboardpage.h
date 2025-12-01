@@ -35,6 +35,7 @@ private:
     bool m_desiredRunning = false;
     bool m_desiredRecorder = false;
     bool m_connectState = false;
+    bool m_recorderState = false;
 signals:
     void requestDialog(const QString &title,
                        const QString &msg,
