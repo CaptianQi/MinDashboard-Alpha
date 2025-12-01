@@ -120,8 +120,26 @@
                       ▼
              [ 前端 UI 页面 ]
 ```
+## 📸 项目截图
+### 📊 Dashboard / 数据看板
+![Dashboard](images/dashpage.png)
+![Dashboard2](images/running.png)
+![Dashboard3](images/recording.png)
+![Dashboard4](images/message.png)
+
+### 📜 日志页面（Log Page）
+![LogPage](images/logPage.png)
+
+### ⚙️ Settings / 设置页面
+![Settings1](images/SettingPage.png)
+![Settings2](images/SettingPage2.png)
+![Settings2](images/message2.png)
+
 ## 💻 运行环境
 > Qt 版本：推荐 Qt 6.5+
 > 工具链：MinGW / MSVC（任选其一）
 > 构建系统：CMake
 > 操作系统：Windows / Linux（开发主要在 Windows）
+## 🙋 作者 & 用途
+> 作者：CaptianQi
+> 基于 Qt Widgets + QML 打造的数据展示平台
