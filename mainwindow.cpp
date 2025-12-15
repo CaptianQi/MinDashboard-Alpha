@@ -4,6 +4,7 @@
 #include"src/ui/uimain/dashboardpage.h"
 #include"src/ui/uimain/logpage.h"
 #include"src/ui/uimain/settingpage.h"
+#include"src/ui/uimain/robotarmpage.h"
 
 #include<QMenu>
 #include<QAction>
@@ -76,12 +77,16 @@ void MainWindow::setupMain()
     //日志页面
     m_logPage  = new LogPage(m_stack);
     m_logPage->setObjectName("LogPage");
+    //机械臂页面
+    m_robotPage = new RobotArmPage(m_stack);
+    m_robotPage->setObjectName("RobotPage");
     //设置页面
     m_settingsPage = new SettingPage(m_stack);
     m_settingsPage->setObjectName("SettingsPage");
     //加入到stack
     m_stack->addWidget(m_dashboardPage);
     m_stack->addWidget(m_logPage);
+    m_stack->addWidget(m_robotPage);
     m_stack->addWidget(m_settingsPage);
 
     //加入到布局

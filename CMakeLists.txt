@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Quick QuickWidgets QML SerialPort Network)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Quick QuickWidgets QML SerialPort Network)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Quick Quick3D QuickWidgets QML SerialPort Network)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Quick Quick3D QuickWidgets QML SerialPort Network)
 
 
 set(PROJECT_SOURCES
@@ -42,6 +42,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
     qt_add_executable(MinDashboard-Alpha
         MANUAL_FINALIZATION
@@ -72,6 +73,9 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
         src/ui/uimain/settingpage.h src/ui/uimain/settingpage.cpp
         src/ui/qml/AppDialog.qml src/ui/qml/SettingsPage.qml src/ui/qml/ToggleSwitch.qml
         src/core/middle/signals/datasignals.h src/core/middle/signals/datasignals.cpp
+        src/ui/uimain/robotarmpage.h src/ui/uimain/robotarmpage.cpp
+        src/ui/qml/meshes/arm.mesh src/ui/qml/meshes/base.mesh src/ui/qml/meshes/forearm.mesh src/ui/qml/meshes/hand.mesh src/ui/qml/meshes/hand_grab_b.mesh src/ui/qml/meshes/hand_grab_b_hinge_1.mesh src/ui/qml/meshes/hand_grab_b_hinge_2.mesh src/ui/qml/meshes/hand_grab_t.mesh src/ui/qml/meshes/hand_grab_t_hinge_1.mesh src/ui/qml/meshes/hand_grab_t_hinge_2.mesh src/ui/qml/meshes/hand_hinge.mesh src/ui/qml/meshes/root.mesh
+        src/ui/qml/RobotArmPrimitive.qml
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -95,6 +99,7 @@ endif()
 target_link_libraries(MinDashboard-Alpha PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Quick
+    Qt${QT_VERSION_MAJOR}::Quick3D
     Qt${QT_VERSION_MAJOR}::QuickWidgets
     Qt${QT_VERSION_MAJOR}::Qml
     Qt${QT_VERSION_MAJOR}::SerialPort
@@ -125,6 +130,7 @@ target_link_libraries(MinDashboard-Alpha PRIVATE Qt6::Core)
 target_link_libraries(MinDashboard-Alpha PRIVATE Qt6::Core Qt6::Widgets)
 target_link_libraries(MinDashboard-Alpha PRIVATE Qt6::Core Qt6::Widgets)
 target_link_libraries(MinDashboard-Alpha PRIVATE Qt6::Core)
+target_link_libraries(MinDashboard-Alpha PRIVATE Qt6::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

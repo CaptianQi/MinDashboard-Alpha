@@ -14,6 +14,7 @@ QT_END_NAMESPACE
 class DashboardPage;
 class LogPage;
 class SettingPage;
+class RobotArmPage;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -39,6 +40,7 @@ private:
     QQuickWidget *m_navQml = nullptr;
     DashboardPage *m_dashboardPage = nullptr;
     LogPage *m_logPage=nullptr;
+    RobotArmPage *m_robotPage = nullptr;
     SettingPage *m_settingsPage = nullptr;
     QStackedWidget *m_stack = nullptr;
     QQuickWidget *m_appDialogWidget = nullptr; // 弹窗

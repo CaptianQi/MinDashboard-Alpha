@@ -29,7 +29,7 @@ void LogPage::setupUi()
     m_model.setHeaderData(2, Qt::Horizontal, QStringLiteral("内容"));
 
     // 创建 QQuickWidget 来加载 QML 页面
-    m_quick = new QQuickWidget(this);
+    m_quick = new QQuickWidget;
     m_quick->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
     //  给QML 暴露：logModel 和 logPage

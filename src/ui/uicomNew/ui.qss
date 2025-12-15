@@ -1,0 +1,97 @@
+/* =================================================
+   NavBar 整体背景（最外层）
+   ================================================= */
+#NavBar{
+    background-color: #0A0E1A;     /* 很深的侧边栏底色 */
+}
+
+/* 内容区（内层容器） */
+#navContent{
+    background-color: #0E1324;     /* 比外层略亮 */
+}
+
+/* =================================================
+   一级 Header（折叠标题）
+   ================================================= */
+QToolButton#navHeader{
+    border: none;
+    background-color: #0E1324;
+    color: #E8EAF0;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* hover：明显但不刺眼 */
+QToolButton#navHeader:hover{
+    background-color: #1A2040;
+}
+
+/* =================================================
+   一级菜单（无二级时）
+   ================================================= */
+QPushButton#navItem{
+    border: none;
+    background-color: #0E1324;
+    color: #D0D6E2;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* hover */
+QPushButton#navItem:hover{
+    background-color: #1A2040;
+    color: #FFFFFF;
+}
+
+/* 选中：实心高对比 */
+QPushButton#navItem:checked{
+    background-color: #243A8F;     /* 深蓝实心 */
+    color: #FFFFFF;
+    border-left: 4px solid #60A5FA;
+    padding-left: 12px;
+}
+
+/* =================================================
+   二级容器（缩进背景层）
+   ================================================= */
+QWidget#navBody{
+    background-color: #121830;     /* 再亮一层，制造“嵌套感” */
+}
+
+/* =================================================
+   二级菜单
+   ================================================= */
+QPushButton#navSubItem{
+    border: none;
+    background-color: #121830;
+    color: #B8C0D4;
+    padding: 10px 20px;            /* 缩进更明显 */
+    text-align: left;
+    font-size: 13px;
+}
+
+/* hover */
+QPushButton#navSubItem:hover{
+    background-color: #202860;
+    color: #FFFFFF;
+}
+
+/* 选中 */
+QPushButton#navSubItem:checked{
+    background-color: #243A8F;
+    color: #FFFFFF;
+    border-left: 4px solid #60A5FA;
+    padding-left: 16px;
+}
+
+/* =================================================
+   按下态（增强“手感”）
+   ================================================= */
+QPushButton#navItem:pressed,
+QPushButton#navSubItem:pressed,
+QToolButton#navHeader:pressed{
+    background-color: #2A3470;
+}

@@ -20,9 +20,10 @@ Rectangle {
     // ===== 导航数据模型 =====
     ListModel {
         id: navModel
-        ListElement { title: qsTr("数据"); iconSource: "qrc:/icons/dashboard.svg" }
-        ListElement { title: qsTr("日志");   iconSource: "qrc:/icons/log.svg" }
-        ListElement { title: qsTr("设置");   iconSource: "qrc:/icons/settings.svg" }
+        ListElement { title: qsTr("数据");   iconSource:"" }
+        ListElement { title: qsTr("日志");   iconSource: "" }
+        ListElement { title: qsTr("控制");   iconSource:"" }
+        ListElement { title: qsTr("设置");   iconSource: "" }
     }
 
     ColumnLayout {
